@@ -23,18 +23,16 @@ jobs:
             coverage report -m
             coverage-badge
 
-  synk:
-    name: Snyk SCA
+  fossa:
+    name: FOSSA
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/python@master
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      - name: Clone repo
+        uses: actions/checkout@v2
+      - name: Run FOSSA to check for vulnerabilities
+        uses: fossas/fossa-action@v1
         with:
-          args: --severity-threshold=high --fail-on=upgradable
-
+          api-key: ${{ secrets.fossaApiKey }}
 
   hawkscan:
     name: StackHawk DAST
