@@ -33,6 +33,15 @@ jobs:
         uses: fossas/fossa-action@v1
         with:
           api-key: ${{ secrets.fossaApiKey }}
+      - name: Build Docker Image
+        run: >
+          docker-compose build
+      - name: Run FOSSA Container scan to check for vulnerabilities
+        uses: fossas/fossa-action@v1
+        with:
+          api-key: ${{ secrets.fossaApiKey }}
+          container: app
+
 
   hawkscan:
     name: StackHawk DAST
