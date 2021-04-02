@@ -15,14 +15,15 @@ RUN mkdir -p /opt/app \
 && mkdir -p /opt/app/vuln_django \
 && mkdir -p /app/.profile.d
 
-COPY requirements.txt start-server.sh /opt/app/
+COPY Pipfile Pipfile.lock start-server.sh /opt/app/
 COPY vuln_django/ /opt/app/vuln_django/vuln_django
 COPY static/ /opt/app/vuln_django/static
 COPY templates/ /opt/app/vuln_django/templates
 COPY polls/ /opt/app/vuln_django/polls
 COPY manage.py /opt/app/vuln_django/
 WORKDIR /opt/app
-RUN pip install -r requirements.txt \
+RUN pip install pipenv \
+&& pipenv install \
 && chown -R www-data:www-data /opt/app
 # && python vuln_django/manage.py migrate
 ENV DJANGO_SUPERUSER_USERNAME=admin
