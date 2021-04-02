@@ -23,7 +23,7 @@ COPY polls/ /opt/app/vuln_django/polls
 COPY manage.py /opt/app/vuln_django/
 WORKDIR /opt/app
 RUN pip install pipenv \
-&& pipenv install \
+&& pipenv install --system --deploy \
 && chown -R www-data:www-data /opt/app
 # && python vuln_django/manage.py migrate
 ENV DJANGO_SUPERUSER_USERNAME=admin

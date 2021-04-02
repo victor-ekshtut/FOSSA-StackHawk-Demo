@@ -6,19 +6,20 @@ jobs:
   test:
     runs-on: ubuntu-latest
     name: Python Tests
-    container:
-      image: python:3.7-buster
     steps:
       - name: Clone repo
         uses: actions/checkout@v2
+      - name: Start Database
+        run: docker-compose up -d db
       - name: Run the Python Tests
         run: |
             # This configures the test stuff
-            apt-get update -qy
-            apt-get install -y python-dev python-pip
-            pip install -r requirements.txt
-            python manage.py migrate
-            python manage.py test
+            sudo apt-get update -qy
+            sudo apt-get install -y python3-dev python3-pip
+            pip install pipenv
+            pipenv install --system --deploy
+            python3 manage.py migrate
+            python3 manage.py test
             coverage run --source='.' manage.py test
             coverage report -m
             coverage-badge

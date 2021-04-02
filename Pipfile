@@ -31,6 +31,6 @@ Faker = "==4.0.2"
 Django = "==3.0.10"
 
 [requires]
-python_version = "3.9"
+python_version = "3.8"
 
 [dev-packages]
