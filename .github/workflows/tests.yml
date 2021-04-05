@@ -14,7 +14,7 @@ jobs:
       - name: Run the Python Tests
         run: |
             # This configures the test stuff
-            sudo echo "127.0.0.1 db localhost" >> /etc/hosts
+            echo "127.0.0.1 db localhost" | sudo tee -a /etc/hosts
             sudo apt-get update -qy
             sudo apt-get install -y python3-dev python3-pip
             pip install pipenv
