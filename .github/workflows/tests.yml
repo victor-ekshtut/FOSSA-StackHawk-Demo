@@ -59,7 +59,7 @@ jobs:
           API_KEY: ${{secrets.HAWK_API_KEY}}
         run: >
           docker run --volume $(pwd):/hawk:rw --tty --rm
-          --network vuln_django_play_default
+          --network fossa-stackhawk-demo_default
           --env API_KEY="${API_KEY}"
           --env NO_COLOR=true
           stackhawk/hawkscan stackhawk.yml stackhawk-github.yml
