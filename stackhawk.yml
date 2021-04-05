@@ -73,7 +73,7 @@ app:
 
 
 hawk:
-  failureThreshold: high
+#  failureThreshold: high
 #  spider:
 #    # Enable the base spider for discovering your app's routes
 #    base: true # (default)
