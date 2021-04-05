@@ -1,4 +1,4 @@
-![Build Status](https://github.com/sgerlach/vuln_django_play/workflows/Tests/badge.svg)
+![Build Status](https://github.com/Serubin/FOSSA-StackHawk-Demo/workflows/Tests/badge.svg)
 =====
 Vulnerable Polls
 =====
