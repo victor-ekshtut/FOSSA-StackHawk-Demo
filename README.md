@@ -68,3 +68,5 @@ YES!
 ```
 docker run -it -p 8020:8020 --name vuln-django --rm --network scan_net vuln_django:latest
 ```
+
+[![FOSSA Status](https://app.fossa.com/api/projects/custom%2B13453%2Fgit%40github.com%3ASerubin%2FFOSSA-StackHawk-Demo.git.svg?type=large)](https://app.fossa.com/projects/custom%2B13453%2Fgit%40github.com%3ASerubin%2FFOSSA-StackHawk-Demo.git?ref=badge_large)
