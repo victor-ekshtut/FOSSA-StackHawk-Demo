@@ -1,4 +1,5 @@
 ![Build Status](https://github.com/Serubin/FOSSA-StackHawk-Demo/workflows/Tests/badge.svg)
+[![FOSSA Status](https://app.fossa.com/api/projects/custom%2B13453%2Fgit%40github.com%3ASerubin%2FFOSSA-StackHawk-Demo.git.svg?type=shield)](https://app.fossa.com/projects/custom%2B13453%2Fgit%40github.com%3ASerubin%2FFOSSA-StackHawk-Demo.git?ref=badge_shield)
 =====
 Vulnerable Polls
 =====
