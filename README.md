@@ -1,5 +1,5 @@
 ![Build Status](https://github.com/Serubin/FOSSA-StackHawk-Demo/workflows/Tests/badge.svg)
-[![FOSSA Status](https://app.fossa.com/api/projects/custom%2B13453%2Fgit%40github.com%3ASerubin%2FFOSSA-StackHawk-Demo.git.svg?type=shield)](https://app.fossa.com/projects/custom%2B13453%2Fgit%40github.com%3ASerubin%2FFOSSA-StackHawk-Demo.git?ref=badge_shield)
+[![FOSSA Status](https://app.fossa.com/api/projects/custom%2B13453%2Fgithub.com%2FSerubin%2FFOSSA-StackHawk-Demo.svg?type=shield)](https://app.fossa.com/projects/custom%2B13453%2Fgithub.com%2FSerubin%2FFOSSA-StackHawk-Demo?ref=badge_shield)
 =====
 Vulnerable Polls
 =====
@@ -69,4 +69,4 @@ YES!
 docker run -it -p 8020:8020 --name vuln-django --rm --network scan_net vuln_django:latest
 ```
 
-[![FOSSA Status](https://app.fossa.com/api/projects/custom%2B13453%2Fgit%40github.com%3ASerubin%2FFOSSA-StackHawk-Demo.git.svg?type=large)](https://app.fossa.com/projects/custom%2B13453%2Fgit%40github.com%3ASerubin%2FFOSSA-StackHawk-Demo.git?ref=badge_large)
+[![FOSSA Status](https://app.fossa.com/api/projects/custom%2B13453%2Fgithub.com%2FSerubin%2FFOSSA-StackHawk-Demo.svg?type=large)](https://app.fossa.com/projects/custom%2B13453%2Fgithub.com%2FSerubin%2FFOSSA-StackHawk-Demo?ref=badge_large)
