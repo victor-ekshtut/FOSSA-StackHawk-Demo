@@ -5,6 +5,8 @@ app:
   env: Development
   # The url of your application to scan
   host: http://localhost:8020 # (required)``
+  autoPolicy: true
+  autoInputVectors: true
 
 
   # The risk level of the app
@@ -73,7 +75,7 @@ app:
 
 
 hawk:
-#  failureThreshold: high
+  failureThreshold: high
 #  spider:
 #    # Enable the base spider for discovering your app's routes
 #    base: true # (default)
