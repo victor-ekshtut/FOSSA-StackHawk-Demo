@@ -3,7 +3,7 @@
 app:
   applicationId: 053cd361-05b2-4b07-9464-3d1da129f5ce # (required)
   # -- The environment for the applicationId defined in the StackHawk platform. --
-  env: Pre-Production # (required)
+  env: Development
   # The url of your application to scan
   host: http://localhost:8020 # (required)``
   autoPolicy: true
