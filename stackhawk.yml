@@ -1,8 +1,9 @@
 # StackHawk configuration file for Vulny_Django
 
 app:
-  applicationId: a12a46a4-ab06-4688-9930-86e5bd295f78 # This is my AppID. There are many like it, but this one is mine.
-  env: Development
+  applicationId: 053cd361-05b2-4b07-9464-3d1da129f5ce # (required)
+  # -- The environment for the applicationId defined in the StackHawk platform. --
+  env: Pre-Production # (required)
   # The url of your application to scan
   host: http://localhost:8020 # (required)``
   autoPolicy: true
