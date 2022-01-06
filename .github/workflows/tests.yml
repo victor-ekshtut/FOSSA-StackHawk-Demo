@@ -34,14 +34,14 @@ jobs:
       - name: Run FOSSA to check for vulnerabilities
         uses: fossas/fossa-action@v1
         with:
-          api-key: ${{ secrets.fossaApiKey }}
+          api-key: ${{ secrets.FOSSA_API_KEY }}
       - name: Build Docker Image
         run: >
           docker-compose build
       - name: Run FOSSA Container scan to check for vulnerabilities
         uses: fossas/fossa-action@v1
         with:
-          api-key: ${{ secrets.fossaApiKey }}
+          api-key: ${{ secrets.FOSSA_API_KEY }}
           container: app
 
 
